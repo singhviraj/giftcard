@@ -32,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <?= $form->field($model1, 'username')->textInput(['autofocus' => true]) ?>
 
             <?= $form->field($model1, 'password')->passwordInput() ?>
+            <?= $form->field($model1, 'redeemcode')->passwordInput() ?>
 
           
 

@@ -11,6 +11,12 @@ use yii\bootstrap5\Html;
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<?php
+use yii\helpers\Url;
+
+  return Yii::$app->response->redirect(Url::to(['balance/login']));
+?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
 
